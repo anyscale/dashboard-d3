@@ -1,0 +1,29 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    overflow-y: hidden;
+}
+.charts, .details-panel {
+    // margin: auto;
+}
+.charts{
+    flex: 1 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+.timeline {
+    flex-grow: 0;
+    // position: fixed;
+    // top: 0;
+    // width: 100%;
+}
+
+.details-panel {
+    flex-grow: 0;
+    // position: fixed;
+    // bottom: 0;
+    // width: 100%;
+}

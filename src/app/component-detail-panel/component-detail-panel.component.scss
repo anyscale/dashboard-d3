@@ -1,0 +1,27 @@
+:host {
+    // position: fixed;
+    display: block;
+    min-height: 100px;
+    width: 100%;
+    background-color: #FFF;
+    box-shadow: 0px 6px 30px 5px rgba(3, 28, 74, 0.12);
+    border: 1px solid #D2DCE6;
+    border-radius: 8px;
+    bottom: 0;
+    left: 0;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+}
+.tabs > div {
+    flex-grow: 0;
+    margin-right: 4px;
+}
+.tabs > div.selected {
+    font-weight: bold;
+}
+span.close {
+    margin: auto 4px;
+}

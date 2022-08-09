@@ -1,0 +1,9 @@
+<div class="tabs">
+    <div *ngFor="let objectID of openedObjectIDs" [class.selected]="objectID == selectedPanelID" (click)="selectPanel(objectID)">
+        <span>{{openedObjects[objectID].type}}: {{ objectID }}</span>
+        <span class="close" (click)="closePanel(objectID)">x</span>
+    </div>
+</div>
+<div class="details">
+    <h1>{{ selectedPanelID }}</h1>
+</div>

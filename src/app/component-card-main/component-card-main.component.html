@@ -1,0 +1,13 @@
+<div class="container">
+   <div>
+      <span class="title">{{ title }}</span>
+      <button class="zippy" (click)="expand()">{{ expanded ? "Collapse" : "Expand" }}</button>
+   </div>
+
+   <div class="expanded-view-container" [class.visible]="this.expanded">
+      <ng-content select=".expanded-view"></ng-content>
+   </div>
+   <div class="collapsed-view-container" [class.visible]="!this.expanded">
+      <ng-content select=".collapsed-view"></ng-content>
+   </div>
+</div>

@@ -1,0 +1,14 @@
+<app-component-card-main title="Nodes">
+    <div class="expanded-view">
+        <div class="controls">
+            <button (click)="zoomIn()">+</button>
+            <button (click)="zoomOut()">-</button>
+        </div>
+        <div class="figure">
+            <figure #nodeStreamChart id="nodeStreamChart"></figure>
+        </div>
+    </div>
+    <div class="collapsed-view">
+        Active: 65 | Terminated : 234 | Failed: 0
+    </div>
+</app-component-card-main>

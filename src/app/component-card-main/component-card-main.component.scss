@@ -1,0 +1,36 @@
+:host {
+    height: 100%;
+}
+.container {
+    border-radius: 4px;
+    border: 1px solid #D2DCE6;
+    width: 100%;
+    min-height: 48px;
+    padding: 16px 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.expanded-view-container,
+.collapsed-view-container {
+    visibility: hidden;
+    height: 0px;
+}
+.expanded-view-container.visible,
+.collapsed-view-container.visible {
+    visibility: visible;
+    height: auto;
+    flex-grow: 1;
+    overflow-y: hidden;
+}

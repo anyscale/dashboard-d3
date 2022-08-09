@@ -1,0 +1,14 @@
+<div class="timeline">
+    <app-component-timeline (timelineBrushedEvent)="onTimelineBrush($event)" [metaJsonData]="metaJsonData" [taskJsonData]="taskJsonData" [nodeJsonData]="nodeJsonData" >
+    </app-component-timeline>
+</div>
+<div class="charts">
+    <app-section-jobs #jobSection [taskJsonData]="taskJsonData" [metaJsonData]="metaJsonData" (taskClickEvent)="onTaskClick($event)">
+    </app-section-jobs>
+    <app-section-nodes #nodeSection [nodeJsonData]="nodeJsonData" [metaJsonData]="metaJsonData" (nodeClickEvent)="onNodeClick($event)">
+    </app-section-nodes>
+</div>
+<div class="details-panel">
+    <app-component-detail-panel #detailPanel>
+    </app-component-detail-panel>
+</div>

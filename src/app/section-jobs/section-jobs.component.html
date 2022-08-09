@@ -1,0 +1,22 @@
+<app-component-card-main title="Tasks">
+    <div class="expanded-view">
+        <div class="controls">
+            <button (click)="zoomIn()">+</button>
+            <button (click)="zoomOut()">-</button>
+            <input type="checkbox" [(ngModel)]="showFailedJobs" (change)="repaint()" id="showFailedJobs" />
+            <label for="showFailedJobs">Failed jobs</label>
+            <input type="checkbox" [(ngModel)]="showRunningJobs" (change)="repaint()" id="showRunningJobs" />
+            <label for="showRunningJobs">Running jobs</label>
+            <input type="checkbox" [(ngModel)]="showCompletedJobs" (change)="repaint()" id="showCompletedJobs" />
+            <label for="showCompletedJobs">Completed jobs</label>
+            <input type="checkbox" [(ngModel)]="showPendingJobs" (change)="repaint()" id="showPendingJobs" />
+            <label for="showPendingJobs">Pending jobs</label>
+        </div>
+        <div class="figure">
+            <figure #taskStreamChart id="taskStreamChart"></figure>
+        </div>
+    </div>
+    <div class="collapsed-view">
+        Running: 123 | Completed: 256 | Failed: 55 | Pending: 0
+    </div>
+</app-component-card-main>
