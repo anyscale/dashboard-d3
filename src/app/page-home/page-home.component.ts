@@ -31,12 +31,12 @@ export class PageHomeComponent implements AfterViewInit {
 
   constructor() { }
   ngAfterViewInit(): void {
-    d3.json("/assets/meta.json").then(data => {
+    d3.json("assets/meta.json").then(data => {
       this.metaJsonData = data;
-      d3.json("/assets/tasks.json").then(data => {
+      d3.json("assets/tasks.json").then(data => {
         this.taskJsonData = data;
       })
-      d3.json("/assets/nodes.json").then(data => {
+      d3.json("assets/nodes.json").then(data => {
         this.nodeJsonData = data;
       })
     })

@@ -2,9 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.0.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Development 
+- `npm install`
+- `ng serve` to start a local dev server
 
 ## Code scaffolding
 
@@ -13,6 +13,10 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+## Deploy
+
+`npm run deploy` to deploy to GitHub Pages at: https://anyscale.github.io/dashboard-d3/
 
 ## Running unit tests
 
